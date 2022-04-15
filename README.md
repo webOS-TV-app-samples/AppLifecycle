@@ -4,11 +4,8 @@ Like the other popular apps in various platforms, the webOS TV app also has its 
 
 This sample app shows the result of each event, and the case of handlesRelaunch option to set the value true is not considered.
 
-:::note
+> If you want to know more details about the app lifecycle, see <a href="https://webostv.developer.lge.com/develop/app-developer-guide/web-app-lifecycle/">App Lifecycle</a>.
 
-If you want to know more details about the app lifecycle, see <a href="https://webostv.developer.lge.com/develop/app-developer-guide/web-app-lifecycle/" class="ted_hyperlink">App Lifecycle</a>.
-
-:::
 
 ## Adding Event Listener for webOSLaunch Event
 
