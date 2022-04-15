@@ -73,12 +73,6 @@ document.addEventListener(
 
 You can’t see the result of the visibility event in the webOS TV emulator or webOS TV. If you want to check the result, we recommend that you use the chrome inspector.
 
-## Download
-
-For your understanding of the lifecycle of the webOS TV app, you can download the sample code and its IPK file at the below link for free.
-
-<a href="https://webostv.developer.lge.com/download_file/view_inline/3564/" class="ted_hyperlink"><img src="https://webostv.developer.lge.com/download_file/view_inline/2088/" alt="Download this sample app" /></a>
-
 ## Do's and Don'ts
 
 - **Do** set the handleRelaunch option in the appinfo.json file to true, then test it again.
