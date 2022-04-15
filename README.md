@@ -2,9 +2,7 @@
 
 Like the other popular apps in various platforms, the webOS TV app also has its lifecycle. After you launch an app, the status of the app is changed continuously by specific conditions until terminated. That is why you need to consider how to handle the lifecycle in case of status changed.
 
-This sample app shows the result of each event, and the case of handlesRelaunch option to set the value true is not considered.
-
-> If you want to know more details about the app lifecycle, see <a href="https://webostv.developer.lge.com/develop/app-developer-guide/web-app-lifecycle/">App Lifecycle</a>.
+This sample app shows the result of each event, and the case of handlesRelaunch option to set the value true is not considered. If you want to know more details about the app lifecycle, see <a href="https://webostv.developer.lge.com/develop/app-developer-guide/web-app-lifecycle/">App Lifecycle</a>.
 
 
 ## Adding Event Listener for webOSLaunch Event
@@ -73,11 +71,7 @@ document.addEventListener(
 );
 ```
 
-:::note
-
-You can’t see the result of the visibility event in the webOS TV emulator or webOS TV. If you want to check the result, we recommend you to use the chrome inspector.
-
-:::
+You can’t see the result of the visibility event in the webOS TV emulator or webOS TV. If you want to check the result, we recommend that you use the chrome inspector.
 
 ## Download
 
