@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+@font-face {
+	font-family: "Miso";
+	src: local("/font/miso.otf")
+}
+
+body {
+		width: 100%; 
+		height: 100%;
+		background-color: #202020;
+} 
+
+div {
+	    position:absolute; 
+		height:100%; 
+		width:100%;
+		display: table;
+		font-size: 30px;
+		color: #ffffff;
+}
+
+h1 {
+	    display: table-cell;
+		vertical-align: middle;
+		text-align:center;
+		color: #FFFFFF;
+}
+
+lg_red { 
+		color: #d80546;		
+
+}
+
+</style>
+<script type="text/javascript" charset="utf-8">
+
+document.addEventListener('webOSLaunch', function(inData) {
+	var launchElement = document.getElementById("launch");
+	launchElement.innerHTML = "<lg_red>App Launched</lg_red>";
+}, true);
+
+document.addEventListener('webOSRelaunch', function(inData) {
+	var launchElement = document.getElementById("reLaunch");
+	launchElement.innerHTML = "<lg_red>App Relaunched</lg_red>";
+}, true);
+
+var hidden, visibilityChange; 
+if (typeof document.hidden !== "undefined") {
+    hidden = "hidden";
+    visibilityChange = "visibilitychange";
+} else if (typeof document.webkitHidden !== "undefined") {
+    hidden = "webkitHidden";
+    visibilityChange = "webkitvisibilitychange";
+}
+ 
+document.addEventListener(visibilityChange, function() { 
+    if (document[hidden]) {
+        var visibilityElement = document.getElementById("visibility");
+		visibilityElement.innerHTML = "<lg_red>App Hidden</lg_red>";
+	}
+    else {
+        var visibilityElement = document.getElementById("visibility");
+		visibilityElement.innerHTML = "<lg_red>App Shown</lg_red>";
+	}
+}, true);
+
+</script>
+</head>
+<body>
+	<div> 
+		<h1 id="launch">Hello World!</h1>
+		<h1 id="reLaunch">Hello World!</h1>
+		<h1 id="visibility">Hello World!</h1>
+	</div>
+</body>
+</html>
